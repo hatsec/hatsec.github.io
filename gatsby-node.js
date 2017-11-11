@@ -23,10 +23,10 @@ exports.modifyWebpackConfig = function(config, env) {
         loader: 'imports?define=>false&this=>window'
     })
 
-    config.loader('sass', {
-        test: /\.scss$/,
-        loader: 'style-loader!css-loader!sass-loader',
-    })
+    // config.loader('sass', {
+    //     test: /\.scss$/,
+    //     loader: 'style-loader!css-loader!sass-loader',
+    // })
 
     return config
 };

@@ -17,7 +17,7 @@ module.exports = React.createClass({
         const boldFont = <link href='https://fonts.googleapis.com/css?family=Archivo+Black|Open+Sans:100,400,500,700' rel='stylesheet' type='text/css'/>
         let scss
         if (process.env.NODE_ENV === 'production') {
-            scss = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.scss')}}/>
+            scss = <style dangerouslySetInnerHTML={{__html: require('!raw!./public/styles.css')}}/>
         }
 
         return (
