@@ -15,7 +15,8 @@ Attendees give talks at our meetings, often security-related, but also drifting 
 ## Requirements
 
 * [Node](https://nodejs.org/en/)
-* GatsbyJS  `npm i -g gatsby-cli`
+* GatsbyJS
+	* `npm i -g gatsby-cli`
 
 ## Installing Site
 
@@ -81,13 +82,9 @@ This is a basic diagram of how the site works so you can find what [you're looki
 |  |  |  |  |   latest information.                           |  |  |  |  |
 |  |  |  |  |                                                 |  |  |  |  |
 |  |  |  |  +-------------------------------------------------+  |  |  |  |
-|  |  |  |                                                       |  |  |  |
 |  |  |  +-------------------------------------------------------+  |  |  |
-|  |  |                                                             |  |  |
 |  |  +-------------------------------------------------------------+  |  |
-|  |                                                                   |  |
 |  +-------------------------------------------------------------------+  |
-|                                                                         |
 +-------------------------------------------------------------------------+
 ```
 
