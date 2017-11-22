@@ -95,7 +95,13 @@ This is a basic diagram of how the site works so you can find what [you're looki
 
 ## Publishing Changes 
 
-`npm deploy` --- MAKE THIS SECTION BETTER
+* Build `/public/` folder.
+	* `npm run build`
+* Push `/public/` to github pages
+	* `npm run deploy`
+
+
+Source:  https://gist.github.com/cobyism/4730490
 
 
 ## Technologies
