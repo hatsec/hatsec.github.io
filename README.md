@@ -2,36 +2,9 @@
 
 A local DEF CON chapter based in Omaha, Nebraska.
 
-## Requirements
-* Node Package Manager (npm). INSTALL_LINK
-* GatsbyJS  `npm i -g gatsby-cli`
-
-## Installing
-`npm i && npm run dev`
-
-
-## Running in Development
-`npm run dev` or `gatsby develop`
-
-## Making Changes
-Most changes that need to be made occur in `pages/primary-nav-pages/` or `pages/secondary-nav-pages/`.
-
-Simply go to the directory of the page you would like to edit and modify the `index.md` file.  Most markdown syntax is accepted as well as basic HTML and CSS. 
-
-For larger changes, to the functionality of the site itself it is recommended to contact github.com/clevernyyyy or open an issue on the site.
-
-## Publishing Changes 
-`npm deploy` --- MAKE THIS SECTION BETTER
-
-
-## Technologies
-* GatsbyJS
-* ReactJS
-* Markdown
-* HTML/CSS
-
 
 ## About Our Group
+
 DC402 Meets at different local venues every second Tuesday of the month. Check the website or follow us at @defcon402 for the latest information.
 
 
@@ -39,8 +12,103 @@ Attendees give talks at our meetings, often security-related, but also drifting 
 
 
 
+## Requirements
+
+* [Node](https://nodejs.org/en/)
+* GatsbyJS  `npm i -g gatsby-cli`
+
+## Installing Site
+
+`npm i && npm run dev`
+
+## Running in Development
+
+`npm run dev` or `gatsby develop`
+
+## Making Changes
+
+Most changes that need to be made occur in `pages/primary-nav-pages/` or `pages/secondary-nav-pages/`.
+
+Simply go to the directory of the page you would like to edit and modify the `index.md` file.  Most markdown syntax is accepted as well as basic HTML and CSS. 
+
+For larger changes, to the functionality of the site itself it is recommended to contact github.com/clevernyyyy or open an issue on the site.
+
+
+### Creating a New Page
+
+Creating a new page is as simple as going to either `pages/primary-nav-pages/` or `pages/secondary-nav-pages/` and creating a new folder, with a nested `index.md` file.  The `index.md` file will contain all configuration information for the new page and it's content.
+
+### Using the `index.md` file
+
+Uses most standard markdown syntax, but can also utilize HTML/CSS/JS.  The configuration options *must be at the top of the file*.  The configuration options are:
+```
+---
+navTitle: Text shown in navbar links
+title: Title of page (browser)
+layout: Chooses the layout style (should always be "page")
+path: Path to the page - make sure to append trailing "/"
+iconType: Icon enumeration table key
+priority: What order to display link in the navbar 
+className: Any class you'd like applied to the content as a whole
+hide: Boolean value (true to show in navbar, false to not show in navbar).  False doesn't mean the page doesn't exist, just not in navbar - for example Code of Conduct page.
+---
+```
+
+Note - not all options must be in the configuration heading.
+
+
+
+### How It Works
+
+This is a basic diagram of how the site works so you can find what [you're looking for](https://youtu.be/UBYnT8JY7sE?t=37) more easily.
+
+```
++-- pages/_template.jsx---------------------------------------------------+
+|                                                                         |
+|  +-- pages/index.jsx-------------------------------------------------+  |
+|  |                                                                   |  |
+|  |  +-- components/Navbars/Navbars.jsx----------------------------+  |  |
+|  |  |                                                             |  |  |
+|  |  |  +-- components/SitePage/index.jsx-----------------------+  |  |  |
+|  |  |  |                                                       |  |  |  |
+|  |  |  |  +-- pages/primary-nav-pages/about/index.md--------+  |  |  |  |
+|  |  |  |  |                                                 |  |  |  |  |
+|  |  |  |  |   About Us                                      |  |  |  |  |
+|  |  |  |  |                                                 |  |  |  |  |
+|  |  |  |  |   DC402 Meets at different local venues every   |  |  |  |  |
+|  |  |  |  |   second Tuesday of the month. Check the        |  |  |  |  |
+|  |  |  |  |   website or follow us at @defcon402 for the    |  |  |  |  |
+|  |  |  |  |   latest information.                           |  |  |  |  |
+|  |  |  |  |                                                 |  |  |  |  |
+|  |  |  |  +-------------------------------------------------+  |  |  |  |
+|  |  |  |                                                       |  |  |  |
+|  |  |  +-------------------------------------------------------+  |  |  |
+|  |  |                                                             |  |  |
+|  |  +-------------------------------------------------------------+  |  |
+|  |                                                                   |  |
+|  +-------------------------------------------------------------------+  |
+|                                                                         |
++-------------------------------------------------------------------------+
+```
+
+
+
+## Publishing Changes 
+
+`npm deploy` --- MAKE THIS SECTION BETTER
+
+
+## Technologies
+
+* GatsbyJS
+* ReactJS
+* Markdown
+* HTML/CSS
+* SASS
+
 
 ## License
+
 The MIT License (MIT)
 
 Copyright (c) 2017 Adam Schaal

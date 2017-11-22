@@ -1,6 +1,5 @@
 import React from 'react'
 import Helmet from 'react-helmet'
-import SitePost from '../components/SitePost'
 import SitePage from '../components/SitePage'
 import { config } from 'config'
 

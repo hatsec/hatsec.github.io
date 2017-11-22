@@ -4,19 +4,9 @@ layout: page
 path: "/contact/"
 iconType: "CONTACTUS"
 priority: 1
+hide: true
 ---
 
-<script>
-	var form = document.querySelector('form');
-	form.onsubmit = function(e) {
-	  console.log('tst')
-	  e.preventDefault();
-
-	  // No back end to actually submit to!
-	  alert('Open the console to see the submit data!')
-	  return false;
-	};
-</script>
 <form>
   <div class="form-group">
     <label for="name">Your Name</label>

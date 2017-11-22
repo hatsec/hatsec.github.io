@@ -49,6 +49,18 @@
 
 
 /*
+	MD SPECIFIC LINKS
+*/
+.page-link {
+	color: #b64d4d;
+}
+.page-link:hover {
+	color: lighten(#b64d4d, 20%);
+	text-decoration: none;
+}
+
+
+/*
 	SOCIAL LINKS
 */
 .blog-social {

@@ -7,9 +7,6 @@ import { prefixLink } from 'gatsby-helpers'
 import access from 'safe-access'
 import { config } from 'config'
 
-
-import SitePost from '../components/SitePost'
-
 class SiteIndex extends React.Component {
 
   render() {

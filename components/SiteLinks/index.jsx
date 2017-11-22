@@ -28,10 +28,11 @@ export default function SiteLinks({bigIcons}) {
         <li>
           <a href={config.siteFacebookUrl}><i className='fa fa-facebook'></i></a>
         </li>
-        <li>
-          <a href={config.siteYouTubeUrl}><i className='fa fa-youtube-play'></i></a>
-        </li>
       </ul>
     </div>
   );
 }
+
+        // <li>
+        //   <a href={config.siteYouTubeUrl}><i className='fa fa-youtube-play'></i></a>
+        // </li>

@@ -44,6 +44,11 @@
 	display: flex;
 	margin-top: 0px !important;
 }
+.big-icons ul {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+}
 .big-icons ul > li {
 	margin: 30px 30px !important;
 	height: 100px !important;

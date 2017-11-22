@@ -40,11 +40,11 @@ A: Reach out to us via the Contact Form or send us an email.
 
 ### Sponsorship with DEF CON 402
 
-Q: My company would like to partner with DEFCON Toronto, Who do we contact?
+Q: My company would like to partner with DEFCON Omaha, Who do we contact?
 
 A: We would love to hear more about your company and how we can work together. Send us an email and allow us up to 24 hours to respond.
 
 
 ### Code of Conduct
 
-We are dedicate to providing a harassment-free experience for everyone. read our official code of conduct, it applies to all DEF CON 402 spaces. offline and online.
+We are dedicate to providing a harassment-free experience for everyone. read our <a class="page-link" href="/code-of-conduct/">official code of conduct</a>, it applies to all DEF CON 402 spaces. offline and online.

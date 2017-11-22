@@ -29,14 +29,16 @@ class Navbars extends React.Component {
       let iconType = navPage.data.iconType
       let href = navPage.data.href
       let title = navPage.data.navTitle ? navPage.data.navTitle : navPage.data.title;
-      return (
-        <NavLink to={prefixLink(navPage.data.path)}
-          iconType={iconType}
-          href={href}
-          key={title}>
-          {title}
-        </NavLink>
-      )
+      if (!navPage.data.hide) {
+        return (
+          <NavLink to={prefixLink(navPage.data.path)}
+            iconType={iconType}
+            href={href}
+            key={title}>
+            {title}
+          </NavLink>
+        )
+      }
     })
 
     /************************
@@ -56,12 +58,14 @@ class Navbars extends React.Component {
     // Iterate over every nav in that folder and create NavLink.
     const secondaryNav = secondaryNavLinks.map((navPage) => {
       let title = navPage.data.navTitle ? navPage.data.navTitle : navPage.data.title;
-      return (
-        <ComponentLink to={prefixLink(navPage.data.path)}
-          key={title}>
-          {title}
-        </ComponentLink>
-      )
+      if (!navPage.data.hide) {
+        return (
+          <ComponentLink to={prefixLink(navPage.data.path)}
+            key={title}>
+            {title}
+          </ComponentLink>
+        )
+      }
     })
 
     const {location} = this.props
